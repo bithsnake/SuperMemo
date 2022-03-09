@@ -1,0 +1,6 @@
+
+      <SafeAreaView style={styles.container} >
+        <View style={{ backgroundColor: "dodgerblue", width: '100%', height: landscape  ? '100%' : '50%' }}>
+        </View>
+        <StatusBar style="auto" />
+      </SafeAreaView>

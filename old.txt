@@ -1,0 +1,42 @@
+import { StatusBar  } from 'expo-status-bar';
+import { StatusBar as TOP_BAR ,StyleSheet, Text, View, SafeAreaView, Image, TouchableWithoutFeedback,TouchableOpacity,TouchableHighlight,Button, Alert,Platform} from 'react-native';
+export default function App() {
+  return (
+    <>
+      <SafeAreaView style={[styles.container,styles.contentcenter,containerStyle]}>
+        <View style={{backgroundColor: "dodgeblue"}}>
+        <Button
+          
+          color="purple"
+          title="Create a memo"
+          onPress={() =>
+            Alert.prompt("Memo Says", "Are yu sure you want to create a new memo?",text => console.log("your text" , text))
+          }
+        />
+        </View>
+        <StatusBar style="auto" />
+      </SafeAreaView>
+    </>
+  );
+}
+const containerStyle = { backgroundColor: "orange" };
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    height: '50%',
+    backgroundColor: '#fff',
+    paddingTop: Platform.OS === 'android' ? TOP_BAR.currentHeight : 0,
+  },
+  header: {
+    flex: 1,
+    width: '50%',
+    height : '50%',
+    backgroundColor: '#fff',
+    alignItems: 'stretch',
+    justifyContent : 'center'
+  },
+  contentcenter: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+});

@@ -1,0 +1,58 @@
+node_modules\expo\AppEntry.js
+E:\WEBDEV\SuperMemo\node_modules\expo\AppEntry.js
+
+
+
+
+<Text>Super Memo!</Text>
+{/* <TouchableWithoutFeedback onPress={()=> console.log("Pressed on the image")}>
+  <Image onProgress={() => console.log("Loading image")} source={{ width: 200, height: 300, uri: "https://picsum.photos/200/300" }}></Image>
+</TouchableWithoutFeedback>
+  <Text numberOfLines={1} onPress={()=> console.log("Pressed text")}>Touchable wuthout feedback</Text> */}
+
+<TouchableHighlight onPress={() => console.log("Pressed on the image")}>
+  <View style={{width : 200, height : 70, backgroundColor: "dodgerblue"}}></View>
+</TouchableHighlight>
+
+
+
+// Alert.alert("Super Memo", "Memo Created!", [
+    //   { text: "Yes", onPress : ()=> console.log("Yes pressed") },
+    //   { text: "No", onPress : ()=> console.log("No pressed") },
+    // ])
+
+
+
+
+
+    /*Not as trustworthy */
+    // console.log(Dimensions.get('screen'));
+    /*Gets the dimensions even in landscale mode */
+    // console.log(useDimensions());
+    //detect device orientation
+    // console.log(useDeviceOrientation());
+
+
+    let num : number = 0;
+    let goup = true;
+    let waveNumber = (n : number) => {
+      setInterval(() => {
+        switch (goup) {
+          case true:
+            n++;
+            if (n >= 200) {
+              goup = false;
+            }
+            console.log("num: ", n);
+            break;
+          case false:
+            n--;
+            if (num <= 0) {
+              goup = true;
+            }
+            console.log("num: ", n);
+            break;
+          }
+      }, 10);
+      return n
+    }
