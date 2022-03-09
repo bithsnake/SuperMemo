@@ -1,7 +1,23 @@
 node_modules\expo\AppEntry.js
 E:\WEBDEV\SuperMemo\node_modules\expo\AppEntry.js
 
+// INFO ABOUT STYLES
+/*
+  "justifyContent" : "center" sets the items centered over the PRIMARY axis (row or column)
+  "alignItems" : "center" sets the items to the center to the SECONDARY axis , which is not chosen as primary, determines items within each line
+  "baseline" sets the baseline of all items to the same, in other words, think of a diagram with staples = same ground starting point
+  "center" means center
+  "flex-end" appears at the end of the SECONDARY axis
+  "flex-wrap" determines the alignment of items along the SECONDARY axis within EACH line
+  "alignContent" : aligns ALL content/items on the SECONDARY axis (only works if we have WRAPPING)
+  "flexBasis" : sets the basis (row or column) size, so if row, its width, if it is column it is height
+  "flexGrow" :  is basically exactly the same as settings the flex : 1 property
+  "flexShrink" is basically the opposite of flex grow, setting flex: -1 is exactly the same as setting flexShrink
+  "position : relative" : in react native components by default has all of its components position set to relative
+  "relative" : respoects the "flex" property
+  "absolute" : sets its position absolute relative to the parent element, and the other elemts will reposition themselves as if this absolute element does not exist
 
+*/
 
 
 <Text>Super Memo!</Text>
