@@ -1,3 +1,3 @@
 # SuperMemo
 
-Project created in React Native
+Project created in angular
